@@ -164,11 +164,21 @@ main{
                     background-color: #09777d;
                     color: white;
                 }
-                img{
+                div.imagecontainer{
+                    overflow: hidden;
                     width:15vw;
                     height:15vw;
-                    // border-radius: 50%;
+                    img{
+                        width:15vw;
+                        height:15vw;
+                        // border-radius: 50%;
+                        transition: all 0.2s ease;
+                    }
+                    img:hover{
+                        transform: scale(1.2);
+                    }
                 }
+                
             }
         }
     }

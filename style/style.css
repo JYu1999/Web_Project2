@@ -207,9 +207,22 @@ main section.second section.cards div.card a {
   color: white;
 }
 
-main section.second section.cards div.card img {
+main section.second section.cards div.card div.imagecontainer {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
+}
+
+main section.second section.cards div.card div.imagecontainer img {
+  width: 15vw;
+  height: 15vw;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.second section.cards div.card div.imagecontainer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer {
